@@ -1,0 +1,448 @@
+.container, .section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    background-color: #0f172a;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.functions {
+    margin-right: 35px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.button {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    background: #1e293b;  
+    color: white;           
+    border: none;          
+    border-radius: 10px;   
+    text-align: center;    
+    cursor: pointer;  
+    transition: all 0.10s ease;
+}
+
+.button:hover {
+    background-color: #0f766e;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.function {
+    width: 120px;
+    font-size: 24px;
+}
+
+#beq {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    background: #22c55e;
+}
+
+#beq:hover {
+    background: #16a34a;
+}
+
+.eq-row {
+    justify-content: center;
+}
+
+#screen {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 850px;
+    width: 850px;
+    box-sizing: border-box;
+    height: 83px;
+    background-color: #38bdf8;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 44px;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0f766e);
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; 
+    margin-bottom: 20px;
+}
+
+.title1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.title2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.calculus {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.fh {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #38bdf8;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #38bdf8;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #38bdf8;
+}
+
+.fh:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #38bdf8;
+}
+
+.fh:active {
+  transform: scale(0.9);
+}
+
+.ch {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ef4444;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #ef4444;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #ef4444;
+}
+
+.ch:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #ef4444;
+}
+
+.clear-history:active {
+  transform: scale(0.9);
+}
+
+.dc {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #22c55e;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #22c55e;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #22c55e;
+}
+
+.dc:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #22c55e;
+}
+
+.dc:active {
+  transform: scale(0.9);
+}
+
+.history-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#btoggle {
+    width: 850px;
+    display: none;
+}
+
+@media screen and (max-width: 419px) {
+    body {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .functions {
+        margin-right: 0;
+        display: none;
+    }
+    #screen {
+        max-width: 320px;
+        width: 100%;
+        font-size: 26px;
+        height: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .function {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+    #beq {
+        width: 293px;
+        height: 40px;
+    }
+    #btoggle {
+        width: 320px;
+        display: block;
+        height: 40px;
+        padding-top: 10px;
+    }
+    .title1 {
+        width: 100%;
+        font-size: 27px;
+    }
+    .text {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .history-buttons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 479px) {
+    .main {
+        max-width: 320px;
+        width: 90%;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .functions {
+        margin-right: 0;
+        display: none;
+    }
+    #screen {
+        max-width: 320px;
+        width: 100%;
+        font-size: 26px;
+        height: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .function {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+    #beq {
+        width: 293px;
+        height: 40px;
+    }
+    #btoggle {
+        width: 320px;
+        display: block;
+        height: 40px;
+        padding-top: 10px;
+    }
+    .title1 {
+        width: 100%;
+        font-size: 28px;
+    }
+    .text {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .history-buttons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .main {
+        max-width: 420px;
+        width: 100%;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .functions {
+        margin-right: 0;
+        display: none;
+    }
+    #screen {
+        max-width: 420px;
+        width: 100%;
+        font-size: 30px;
+        height: 60px;
+    }
+    .button {
+        width: 80px;
+        height: 50px;
+        font-size: 26px;
+    }
+    .function {
+        width: 115px;
+        height: 55px;
+        font-size: 25px;
+    }
+    #beq {
+        width: 410px;
+        height: 50px;
+    }
+    #btoggle {
+        width: 410px;
+        display: block;
+        height: 40px;
+    }
+    .title1 {
+        font-size: 32px;
+    }
+    .title2 {
+        font-size: 32px;
+    }
+    .text {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .history-buttons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main {
+        width: 60%;
+    }
+    .container2 {
+        flex-direction: row;
+    }
+    .functions {
+        margin-right: 0;
+        display: block;
+    }
+    #screen {
+        max-width: 733px;
+        width: 100%;
+        font-size: 34px;
+        height: 70px;
+    }
+    .button {
+        width: 90px;
+        height: 55px;
+        font-size: 22px;
+    }
+    .function {
+        width: 130px;
+        height: 55px;
+        font-size: 22px;
+    }
+    #beq {
+        width: 450px;
+        height: 55px;
+    }
+    #btoggle {
+        width: 450px;
+        display: block;
+        height: 40px;
+        padding-top: 10px;
+    }
+    .title1 {
+        font-size: 36px;
+    }
+    .title2 {
+        font-size: 36px;
+    }
+    .text {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .history-buttons {
+        flex-direction: row;
+    }
+}
+
+
+
+
+

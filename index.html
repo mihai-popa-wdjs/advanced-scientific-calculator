@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title1">Advanced Scientific Calculator</h1>
+        <p class="text">A web-based scientific calculator that supports both basic and advanced mathematical operations.</p>
+        <p class="text">It provides an interactive interface and includes features such as trigonometric functions, logarithms, and custom calculations.</p>
+        <div class="main">
+            <div id="screen"></div>
+            <div id="btoggle" class="button">Functions</div>
+            <div class="container2">
+                <div class="functions">
+                    <div class="row">
+                        <div id="b10x" class="button function">10ˣ</div>
+                        <div id="b2x" class="button function">2ˣ</div>
+                        <div id="bex" class="button function">eˣ</div>
+                    </div>
+                    <div class="row">
+                        <div id="bxy" class="button function">xʸ</div>
+                        <div id="bfactorial" class="button function">x!</div>
+                        <div id="bsqrt" class="button function">&radic;x</div>
+                    </div>
+                    <div class="row">
+                        <div id="bcbrt" class="button function">³&radic;x</div>
+                        <div id="bnrt" class="button function">ⁿ&radic;x</div>
+                        <div id="bln" class="button function">ln(x)</div>
+                    </div>
+                    <div class="row">
+                        <div id="blog" class="button function">logₓ(y)</div>
+                        <div id="blg" class="button function">lg(x)</div>
+                        <div id="bsin" class="button function">sin(x)</div>
+                    </div>
+                    <div class="row">
+                        <div id="bcos" class="button function">cos(x)</div>
+                        <div id="btg" class="button function">tg(x)</div>
+                        <div id="bctg" class="button function">ctg(x)</div>
+                    </div>
+                    <div class="row">
+                        <div id="bprime" class="button function">prime(x)</div>
+                        <div id="bfibo" class="button function">fibo(x)</div>
+                        <div id="bpal" class="button function">pal(x)</div>
+                    </div>
+                    <div class="row">
+                        <div id="babs" class="button function">|x|</div>
+                        <div id="bgcd" class="button function">gcd(arr)</div>
+                        <div id="blcm" class="button function">lcm(arr)</div>
+                    </div>
+                </div>
+                <div class="symbols">
+                    <div class="row">
+                        <div id="b-allclear" class="button">AC</div>
+                        <div id="bdelete" class="button">DEL</div>
+                        <div id="be" class="button">e</div>
+                        <div id="bpi" class="button">π</div>
+                    </div>
+                    <div class="row">
+                        <div id="b1" class="button">1</div>
+                        <div id="b2" class="button">2</div>
+                        <div id="b3" class="button">3</div>
+                        <div id="bplus" class="button">+</div>
+                    </div>
+                    <div class="row">
+                        <div id="b4" class="button">4</div>
+                        <div id="b5" class="button">5</div>
+                        <div id="b6" class="button">6</div>
+                        <div id="bminus" class="button">-</div>
+                    </div>
+                    <div class="row">
+                        <div id="b7" class="button">7</div>
+                        <div id="b8" class="button">8</div>
+                        <div id="b9" class="button">9</div>
+                        <div id="bmultiply" class="button">*</div>
+                    </div>
+                    <div class="row">
+                        <div id="bp" class="button">.</div>
+                        <div id="b0" class="button">0</div>
+                        <div id="bcomma" class="button">,</div>
+                        <div id="bdivide" class="button">/</div>
+                    </div>
+                    <div class="row">
+                        <div id="bpar1" class="button">(</div>
+                        <div id="bpar2" class="button">)</div>
+                        <div id="bpercent" class="button">%</div>
+                        <div id="bdeg" class="button">°</div>
+                    </div>
+                    <div class="row">
+                        <div id="beq" class="button eq-row">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <h1 class="title2">History</h1>
+            <div class="history-buttons">
+                <button id="full-history" class="fh">Full history</button>
+                <button id="clear-history" class="ch">Clear history</button>
+                <button id="delete-calculus" class="dc">Delete calculus</button>
+            </div>
+            <ul id="history"></ul>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
